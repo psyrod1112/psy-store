@@ -35,5 +35,14 @@ _v2 로드맵_
 - 프론트 : 최소한의 기능만 하도록 (백엔드가 이 프로젝트 메인)
 - 앱 형태: 다운로드형 (접근권형은 v2)
 
+```
+dev.psyrod.store
+├── member     회원/인증
+├── catalog    앱·릴리스
+├── order      주문
+├── payment    결제 (PaymentGateway 인터페이스 + 토스 구현)
+├── library    소유권·다운로드
+└── common     에러 응답, 공통 설정
+```
 
 ## 기여 규칙
