@@ -2,10 +2,14 @@ spring:
   config:
     import: optional:file:.env[.properties]
   datasource:
-    url: jdbc:postgresql://localhost:${DB_PORT:5433}/${DB_NAME:psystore}
+    url: jdbc:postgresql://localhost:${DB_PORT:5432}/${DB_NAME:psystore}
     username: ${DB_USER:psystore}
     password: ${DB_PASSWORD:}
 
 logging:
   level:
     org.hibernate.SQL: debug
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:local-dev-only-secret-key-change-me-at-least-32-bytes}
