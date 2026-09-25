@@ -10,3 +10,7 @@ logging:
   structured:
     format:
       console: ecs
+
+app:
+  jwt:
+    secret: ${JWT_SECRET}
