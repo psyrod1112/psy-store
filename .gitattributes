@@ -4,3 +4,9 @@ gradlew text eol=lf
 *.bat text eol=crlf
 *.jar binary
 *.png binary
+
+# lf는 \n임. 이걸로 강제 통일 하겠다는 뜻
+# crlf는 \r\n임. 윈도우에서 쓰는 줄바꿈
+
+# .jar, .png는 바이너리 파일이므로 text=auto를 적용하면 안됨.
+# 그래서 binary로 지정
